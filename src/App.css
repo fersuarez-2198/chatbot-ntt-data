@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "FontPrimax";
+  src: local("FontPrimax"), url(../src/assets/fonts/icomoon.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "FontDINPro";
+  src: local("DINPro"),
+    url(../src/assets/fonts/DINPro-Medium_13936.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "FontGelion";
+  src: local("FontGelion"),
+    url(../src/assets/fonts/Gelion-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "FontBree";
+  src: local("FontBree"),
+    url(../src/assets/fonts/Bree_Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FontMovistar";
+  src: local("FontMovistar"),
+    url(../src/assets/fonts/movistar/Telefonica-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "sendButtonFont";
+  src: url("../src/assets/fonts/icons-as-fonts/sendButton/icomoon.ttf")
+      format("truetype"),
+    url("../src/assets/fonts/icons-as-fonts/sendButton/icomoon.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "sendButtonFont" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-send:before {
+  content: "\e900";
+}
+
+div {
   display: flex;
-  flex-direction: column;
+  font-family: "FontDINPro";
+}
+
+html {
+  background-color: white;
+}
+
+.navBar,
+.ktAfeC {
+  width: 100%;
+  margin: 0;
+}
+
+.navTitle {
+  text-align: center;
+  align-items: center;
+  margin: auto;
+  font-size: 20px;
+}
+
+.btnSettings {
+  background-image: url(../src/assets/icons/settings.png);
+  width: 3rem;
+  height: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent !important;
+  border: none !important;
+  margin-right: 1rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  min-width: 10rem;
+  font-size: 1rem;
+  color: #212529;
+  text-align: left;
+  list-style: none;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+a.dropdown-item {
+  background-color: #fff;
+  color: #666666;
+  margin-top: 9px;
+  border-radius: 5px;
+  height: 47px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  cursor: pointer;
+  font-size: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-menu.show {
+  background: transparent;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Propiedades para quitar el bordeado predeterminado de la caja de opciones */
+button.dropdown-toggle.btn.btn-primary {
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
+
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #fff;
+  background-color: none;
+  border: none;
+  box-shadow: none !important;
+}
+/* ******************************************** */

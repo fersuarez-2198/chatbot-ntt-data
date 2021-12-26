@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="47px" height="47px" viewBox="0 0 47 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="23.5917969" cy="23.6556703" r="23.0917969"></circle>
+    </defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2" transform="translate(-263.000000, -296.000000)">
+            <g id="Group" transform="translate(263.000000, 296.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Oval-Copy" fill="#D8D8D8" xlink:href="#path-1"></use>
+                <circle id="Oval" fill="#727272" mask="url(#mask-2)" cx="23.5917969" cy="18.2420961" r="7.5"></circle>
+                <path d="M23.5917969,27.7474672 L23.5917969,27.7474672 C30.4953562,27.7474672 36.0917969,33.3439078 36.0917969,40.2474672 L36.0917969,46.7474672 L11.0917969,46.7474672 L11.0917969,40.2474672 C11.0917969,33.3439078 16.6882375,27.7474672 23.5917969,27.7474672 Z" id="Rectangle" fill="#727272" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>
